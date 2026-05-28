@@ -70,17 +70,17 @@
             <div class="kpi-grid">
               <article class="kpi-card">
                 <span>국내 전문 헤어 시장 점유율</span>
-                <strong>52%</strong>
+                <strong data-target="52" data-suffix="%">52%</strong>
                 <p>시장 1위</p>
               </article>
               <article class="kpi-card">
                 <span>2024년 매출</span>
-                <strong>792억</strong>
+                <strong data-target="792" data-suffix="억">792억</strong>
                 <p>역대 최고 매출</p>
               </article>
               <article class="kpi-card">
                 <span>국내 전문 헤어 시장 규모</span>
-                <strong>5,500억</strong>
+                <strong data-target="5500" data-suffix="억" data-comma>5,500억</strong>
                 <p>살롱 전문 채널 중심</p>
               </article>
               <article class="kpi-card">
@@ -99,7 +99,7 @@
                   </div>
                   <span id="chartBadge">억원</span>
                 </div>
-                <div class="interactive-chart" id="mainChart" aria-label="전략 데이터 시각화"></div>
+                <div class="chart-wrapper"><canvas id="mainChart" aria-label="전략 데이터 시각화"></canvas></div>
               </article>
 
               <article class="card summary-card">
@@ -287,6 +287,18 @@
                 <img src="./assets/page_30.png" alt="B2B와 B2C 소비자 분석 슬라이드" />
               </button>
             </div>
+            <article class="card consumer-chart-card">
+              <div class="card-head">
+                <div>
+                  <h3>B2B · B2C 채널 비중</h3>
+                  <p>추정 매출 구성 비율</p>
+                </div>
+                <span>추정치</span>
+              </div>
+              <div class="chart-wrapper" style="height:220px;">
+                <canvas id="consumerChart" aria-label="B2B B2C 채널 비중 차트"></canvas>
+              </div>
+            </article>
           </section>
 
           <section id="market" class="dashboard-section">
@@ -390,6 +402,7 @@
       <p></p>
     </dialog>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

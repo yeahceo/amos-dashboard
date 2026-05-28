@@ -433,42 +433,13 @@ main {
   padding: 6px 10px;
 }
 
-.interactive-chart {
-  display: grid;
-  grid-template-columns: repeat(var(--count), 1fr);
-  align-items: end;
-  gap: 14px;
+.chart-wrapper {
+  position: relative;
   height: 300px;
-  border-bottom: 1px solid var(--line);
-  background: linear-gradient(var(--line-soft) 1px, transparent 1px) 0 0 / 100% 25%;
-  padding: 20px 12px 0;
 }
 
-.chart-item {
-  display: grid;
-  grid-template-rows: 1fr auto auto;
-  align-items: end;
-  height: 100%;
-  text-align: center;
-}
-
-.chart-item::before {
-  content: "";
-  height: var(--h);
-  min-height: 12px;
-  border-radius: 6px 6px 0 0;
-  background: linear-gradient(180deg, var(--blue), rgba(114, 161, 255, 0.45));
-}
-
-.chart-item b {
-  margin-top: 8px;
-  color: var(--ink);
-  font-size: 13px;
-}
-
-.chart-item span {
-  color: var(--faint);
-  font-size: 11px;
+.consumer-chart-card {
+  margin-top: 16px;
 }
 
 .accordion {
