@@ -380,6 +380,11 @@ main { padding: 24px; flex: 1; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
+#marketing .section-grid,
+#market .section-grid,
+#consumer .consumer-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
 /* ── Data card ───────────────────────────────────────────────────────────── */
 .data-card h3 { margin: 0 0 14px; font-size: 15px; font-weight: 700; }
@@ -624,7 +629,8 @@ tbody tr:hover td, tbody tr:hover th { background: var(--color-primary-soft); }
   .search { width: 100%; }
   .sidebar nav,
   .kpi-grid, .product-matrix, .swot-grid, .issue-grid, .strategy-grid,
-  .section-grid, .consumer-grid { grid-template-columns: 1fr; }
+  .section-grid, .consumer-grid,
+  #marketing .section-grid, #market .section-grid, #consumer .consumer-grid { grid-template-columns: 1fr; }
   .data-card dl, .compact-list, .campaign-list div { grid-template-columns: 1fr; }
   .timeline { grid-template-columns: repeat(3, minmax(130px, 1fr)); }
 }
