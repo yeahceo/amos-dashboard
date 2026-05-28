@@ -1,0 +1,5 @@
+{
+  "buildCommand": "mkdir -p dist && cp -r index.html styles.css app.js design_tokens.md assets dist/",
+  "outputDirectory": "dist",
+  "installCommand": "echo \"No install needed\""
+}

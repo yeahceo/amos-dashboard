@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AMOS Professional Strategy Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar" aria-label="대시보드 메뉴">
+        <div class="brand-lockup">
+          <span class="brand-mark">A</span>
+          <div>
+            <strong>AMOS</strong>
+            <small>Professional Strategy</small>
+          </div>
+        </div>
+        <nav>
+          <a class="is-active" href="#overview">Overview</a>
+          <a href="#company">기업 분석</a>
+          <a href="#product">제품 분석</a>
+          <a href="#marketing">마케팅 분석</a>
+          <a href="#consumer">소비자 분석</a>
+          <a href="#market">시장 트렌드</a>
+          <a href="#competition">경쟁 구도</a>
+          <a href="#strategy">전략 방향</a>
+        </nav>
+        <div class="sidebar-note">
+          <span>Data Source</span>
+          <strong>AMOS Professional Factbook 2025</strong>
+          <p>PDF 1-42쪽 전략 분석 본문 기준</p>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Brand Strategy Dashboard</p>
+            <h1>AMOS Professional 전략 분석</h1>
+          </div>
+          <label class="search">
+            <span>검색</span>
+            <input id="dashboardSearch" type="search" placeholder="녹차실감, B2C, 스키니피케이션, 웰라" />
+          </label>
+        </header>
+
+        <main>
+          <section id="overview" class="dashboard-section">
+            <div class="hero-grid">
+              <div class="hero-copy">
+                <p class="eyebrow">Executive Summary</p>
+                <h2>국내 전문 헤어 시장 1위 브랜드의 성장 동력과 다음 전략을 분석합니다</h2>
+                <p>
+                  아모스프로페셔널은 아모레퍼시픽그룹의 헤어살롱 전문 브랜드입니다.
+                  2024년 매출 792억원, 국내 전문 헤어 시장 점유율 약 52%를 기반으로
+                  B2B 살롱 파트너십을 지키면서 B2C 홈케어와 글로벌 K-헤어케어 확장을 준비하고 있습니다.
+                </p>
+                <div class="hero-actions" aria-label="요약 인터랙션">
+                  <button class="is-active" type="button" data-view="revenue">매출 성장</button>
+                  <button type="button" data-view="market">시장 구도</button>
+                  <button type="button" data-view="global">글로벌 기회</button>
+                </div>
+              </div>
+              <button class="image-card hero-image" type="button" data-image="./assets/page_01.png" data-caption="AMOS Professional Brand Factbook 2025 표지">
+                <img src="./assets/page_01.png" alt="AMOS Professional Brand Factbook 2025 표지" />
+              </button>
+            </div>
+
+            <div class="kpi-grid">
+              <article class="kpi-card">
+                <span>국내 전문 헤어 시장 점유율</span>
+                <strong>52%</strong>
+                <p>시장 1위</p>
+              </article>
+              <article class="kpi-card">
+                <span>2024년 매출</span>
+                <strong>792억</strong>
+                <p>역대 최고 매출</p>
+              </article>
+              <article class="kpi-card">
+                <span>국내 전문 헤어 시장 규모</span>
+                <strong>5,500억</strong>
+                <p>살롱 전문 채널 중심</p>
+              </article>
+              <article class="kpi-card">
+                <span>B2B / B2C 추정 비중</span>
+                <strong>70 / 30</strong>
+                <p>B2B 중심, B2C 확장</p>
+              </article>
+            </div>
+
+            <div class="overview-grid">
+              <article class="card chart-card">
+                <div class="card-head">
+                  <div>
+                    <h3 id="chartTitle">매출 성장 궤적</h3>
+                    <p id="chartDesc">2013년 490억원에서 2024년 792억원으로 약 61.6% 성장했습니다.</p>
+                  </div>
+                  <span id="chartBadge">억원</span>
+                </div>
+                <div class="interactive-chart" id="mainChart" aria-label="전략 데이터 시각화"></div>
+              </article>
+
+              <article class="card summary-card">
+                <div class="card-head">
+                  <div>
+                    <h3>Key Insights</h3>
+                    <p>Factbook 42쪽 요약</p>
+                  </div>
+                  <span>5 Points</span>
+                </div>
+                <button class="accordion is-open" type="button">
+                  <span>국내 시장 1위</span><b>+</b>
+                </button>
+                <div class="accordion-panel is-open">
+                  전문 헤어 시장 52% 점유. B2B 살롱 파트너십이 핵심 경쟁력입니다.
+                </div>
+                <button class="accordion" type="button">
+                  <span>스키니피케이션 기회</span><b>+</b>
+                </button>
+                <div class="accordion-panel">
+                  녹차실감 세럼과 리뉴 카멜리아로 두피 스킨케어 트렌드에 대응하고 있습니다.
+                </div>
+                <button class="accordion" type="button">
+                  <span>글로벌 도전</span><b>+</b>
+                </button>
+                <div class="accordion-panel">
+                  K-헤어케어 수출 +39.2% 성장 흐름을 활용하되 글로벌 인지도 구축이 필요합니다.
+                </div>
+                <button class="accordion" type="button">
+                  <span>경쟁 심화</span><b>+</b>
+                </button>
+                <div class="accordion-panel">
+                  웰라 재진입, 로레알·케라스타즈 AI 서비스 강화에 데이터 기반 마케팅으로 대응해야 합니다.
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section id="company" class="dashboard-section">
+            <div class="section-title">
+              <div>
+                <p class="eyebrow">01 Company</p>
+                <h2>기업 분석</h2>
+              </div>
+            </div>
+            <div class="section-grid">
+              <article class="card data-card">
+                <h3>브랜드 기본 정보</h3>
+                <dl>
+                  <dt>정식명칭</dt><dd>(주)아모스프로페셔널</dd>
+                  <dt>설립일</dt><dd>1976년 1월 24일</dd>
+                  <dt>대표이사</dt><dd>권오창</dd>
+                  <dt>모기업</dt><dd>아모레퍼시픽그룹 100% 완전 자회사</dd>
+                  <dt>사업</dt><dd>헤어살롱 전문 제품 기획·제조·판매</dd>
+                  <dt>임직원수</dt><dd>약 94명, 2022년 기준</dd>
+                </dl>
+              </article>
+              <article class="card data-card">
+                <h3>재무 건전성</h3>
+                <dl>
+                  <dt>자산총계</dt><dd>693억 2,727만원</dd>
+                  <dt>부채총계</dt><dd>137억 3,244만원</dd>
+                  <dt>자본총계</dt><dd>555억 9,483만원</dd>
+                  <dt>이익잉여금</dt><dd>520억 9,483만원</dd>
+                  <dt>부채비율</dt><dd>24.7%</dd>
+                  <dt>유동비율</dt><dd>467%</dd>
+                </dl>
+              </article>
+              <button class="image-card" type="button" data-image="./assets/page_07.png" data-caption="브랜드 아이덴티티, Mission, Vision, Core Value">
+                <img src="./assets/page_07.png" alt="브랜드 아이덴티티와 코어 밸류 슬라이드" />
+              </button>
+            </div>
+            <article class="card timeline-card">
+              <h3>브랜드 성장 타임라인</h3>
+              <div class="timeline">
+                <span><b>1976</b> 설립</span>
+                <span><b>2007</b> 녹차실감 출시</span>
+                <span><b>2016</b> RIA 트렌드 개발 프로세스 도입</span>
+                <span><b>2022</b> 리인벤팅 비전 선포</span>
+                <span><b>2023</b> 잇츠에이블 출시</span>
+                <span><b>2024</b> 매출 792억원, 리뉴 카멜리아 출시</span>
+                <span><b>2025</b> 살롱커넥션 3회, 글로벌 대응 강화</span>
+              </div>
+            </article>
+          </section>
+
+          <section id="product" class="dashboard-section">
+            <div class="section-title">
+              <div>
+                <p class="eyebrow">02 Product</p>
+                <h2>제품 분석</h2>
+              </div>
+            </div>
+            <div class="tabs" aria-label="대표 제품 선택">
+              <button class="is-active" type="button" data-product="green">녹차실감</button>
+              <button type="button" data-product="camellia">리뉴 카멜리아</button>
+              <button type="button" data-product="able">잇츠에이블</button>
+              <button type="button" data-product="style">스타일링</button>
+            </div>
+            <div class="product-panel card">
+              <div>
+                <p class="eyebrow" id="productCategory">Scalp Care</p>
+                <h3 id="productName">녹차실감</h3>
+                <p id="productDescription">2007년 출시된 아모스프로페셔널의 스테디셀러 No.1 라인입니다. 극차광 녹차와 카페인을 중심으로 두피 타입별 기능성 케어를 제안합니다.</p>
+                <dl class="compact-list" id="productFacts"></dl>
+              </div>
+              <button class="image-card product-image" type="button" data-image="./assets/page_17.png" data-caption="대표 제품 심층 분석">
+                <img id="productImage" src="./assets/page_17.png" alt="대표 제품 심층 분석 슬라이드" />
+              </button>
+            </div>
+            <div class="product-matrix">
+              <article class="card"><span>C</span><h3>Color / Perm</h3><p>잇츠글로우, 트루싱크, 잇츠에이블, 녹차빛채.</p></article>
+              <article class="card"><span>S</span><h3>Scalp Care</h3><p>녹차실감, 퓨어스마트, 녹차실감 세럼.</p></article>
+              <article class="card"><span>R</span><h3>Repair / Shine</h3><p>리페어 시카, 리페어 CMC 중심 손상 케어.</p></article>
+              <article class="card"><span>ST</span><h3>Style Expression</h3><p>헤어핏 컬업젤리 등 스타일링 제품.</p></article>
+              <article class="card"><span>RC</span><h3>Renu Camellia</h3><p>동백오일 기반 프리미엄 케어.</p></article>
+            </div>
+          </section>
+
+          <section id="marketing" class="dashboard-section">
+            <div class="section-title">
+              <div>
+                <p class="eyebrow">03 Marketing</p>
+                <h2>광고 & 마케팅 분석</h2>
+              </div>
+            </div>
+            <div class="section-grid">
+              <article class="card">
+                <h3>캠페인 포트폴리오</h3>
+                <div class="campaign-list">
+                  <div><b>2023-현재</b><span>살롱커넥션</span><em>B2B 헤어 디자이너 커뮤니티 행사</em></div>
+                  <div><b>2024-현재</b><span>컬러스테이지</span><em>REAL IMPACT / CREATIVE, 총상금 650만원</em></div>
+                  <div><b>시즌별</b><span>시즌 룩북</span><em>S/S Kick, Summer's Chic 등 트렌드 콘텐츠</em></div>
+                  <div><b>2024년-</b><span>글로벌 헤어쇼</span><em>영국 얼터너티브 헤어쇼, 라브 이재영 원장 협업</em></div>
+                </div>
+              </article>
+              <article class="card">
+                <h3>디지털 채널</h3>
+                <div class="tag-cloud">
+                  <span>Instagram 약 35,000명</span>
+                  <span>YouTube 현장·인터뷰</span>
+                  <span>AMOS NEWS</span>
+                  <span>헤어스토리 Vol.250</span>
+                  <span>AMOS Pro B2B</span>
+                  <span>아모레몰 B2C</span>
+                </div>
+              </article>
+              <button class="image-card" type="button" data-image="./assets/page_25.png" data-caption="주요 마케팅 캠페인 분석">
+                <img src="./assets/page_25.png" alt="주요 마케팅 캠페인 분석 슬라이드" />
+              </button>
+            </div>
+          </section>
+
+          <section id="consumer" class="dashboard-section">
+            <div class="section-title">
+              <div>
+                <p class="eyebrow">04 Consumer</p>
+                <h2>소비자 분석</h2>
+              </div>
+            </div>
+            <div class="consumer-grid">
+              <article class="card persona-card">
+                <span class="persona-label">B2B 70%</span>
+                <h3>헤어 디자이너 & 살롱 오너</h3>
+                <p>30-50대 중심의 전국 살롱 디자이너와 살롱 원장·오너급 구매 의사결정자.</p>
+                <ul>
+                  <li>아모레퍼시픽 R&D 기반 제품력 신뢰</li>
+                  <li>RIA 프로세스 기반 트렌드 최신성</li>
+                  <li>살롱커넥션·컬러스테이지 참여 기회</li>
+                  <li>아모스프로 B2B 플랫폼 편의성</li>
+                </ul>
+              </article>
+              <article class="card persona-card">
+                <span class="persona-label secondary">B2C 30%</span>
+                <h3>살롱 시술 후 홈케어 소비자</h3>
+                <p>20대 후반-40대 초반 여성 중심. 두피 스킨케어와 기능성 성분에 관심이 높습니다.</p>
+                <ul>
+                  <li>살롱에서 쓰던 제품을 집에서도 쓰고 싶은 니즈</li>
+                  <li>녹차, 카멜리아, 레티놀 등 성분 관심</li>
+                  <li>가격보다 효능 중심 구매</li>
+                  <li>아모레몰, 살롱 리테일, SNS 발견 후 구매</li>
+                </ul>
+              </article>
+              <button class="image-card" type="button" data-image="./assets/page_30.png" data-caption="B2C 소비자 분석">
+                <img src="./assets/page_30.png" alt="B2B와 B2C 소비자 분석 슬라이드" />
+              </button>
+            </div>
+          </section>
+
+          <section id="market" class="dashboard-section">
+            <div class="section-title">
+              <div>
+                <p class="eyebrow">05 Market</p>
+                <h2>시장 & 트렌드 분석</h2>
+              </div>
+            </div>
+            <div class="section-grid">
+              <article class="card data-card">
+                <h3>시장 지표</h3>
+                <dl>
+                  <dt>국내 전문 헤어 시장</dt><dd>약 5,500억원</dd>
+                  <dt>아모스 점유율</dt><dd>약 52%</dd>
+                  <dt>글로벌 헤어케어 시장</dt><dd>2024년 1,039억달러</dd>
+                  <dt>글로벌 CAGR</dt><dd>2025-2030년 6.9%</dd>
+                  <dt>K-헤어케어 수출</dt><dd>2025년 3분기 7,724만달러, +39.2%</dd>
+                </dl>
+              </article>
+              <article class="card">
+                <h3>스키니피케이션</h3>
+                <p class="card-copy">스킨케어 성분과 루틴을 두피와 모발 관리에 적용하는 트렌드입니다. 녹차실감 세럼과 리뉴 카멜리아가 이 흐름에 대응합니다.</p>
+                <div class="tag-cloud">
+                  <span>두피를 피부처럼 관리</span>
+                  <span>세럼·앰플·마스크</span>
+                  <span>레티놀·콜라겐·비타민C</span>
+                  <span>맞춤형 두피 진단 가능성</span>
+                </div>
+              </article>
+              <button class="image-card" type="button" data-image="./assets/page_34.png" data-caption="핵심 트렌드: 스키니피케이션">
+                <img src="./assets/page_34.png" alt="스키니피케이션 트렌드 분석 슬라이드" />
+              </button>
+            </div>
+          </section>
+
+          <section id="competition" class="dashboard-section">
+            <div class="section-title">
+              <div>
+                <p class="eyebrow">06 Competition</p>
+                <h2>경쟁 구도</h2>
+              </div>
+            </div>
+            <div class="table-card">
+              <table>
+                <thead>
+                  <tr><th>구분</th><th>아모스</th><th>밀본</th><th>로레알 프로</th><th>웰라 프로</th><th>케라스타즈</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>시장점유율</th><td>약 52%</td><td>10-15% 추정</td><td>약 10% 추정</td><td>재진입 단계</td><td>럭셔리 살롱 케어</td></tr>
+                  <tr><th>가격대</th><td>중-프리미엄</td><td>프리미엄</td><td>프리미엄-하이엔드</td><td>중-프리미엄</td><td>럭셔리</td></tr>
+                  <tr><th>핵심 채널</th><td>전국 살롱+B2C</td><td>프리미엄 살롱</td><td>살롱+교육</td><td>전문 살롱 유통</td><td>럭셔리 살롱</td></tr>
+                  <tr><th>강점</th><td>국내 네트워크, R&D</td><td>케어 기술력</td><td>글로벌 헤리티지</td><td>염모제 전문성</td><td>AI 두피 진단</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="swot-grid">
+              <article class="card"><b>S</b><p>52% 점유율, 아모레퍼시픽 R&D, 녹차실감, B2B 네트워크, RIA 프로세스.</p></article>
+              <article class="card"><b>W</b><p>글로벌 인지도 부족, B2C 접근성 제한, SNS 존재감 개선 필요.</p></article>
+              <article class="card"><b>O</b><p>K-헤어케어 수출 성장, 스키니피케이션, 프리미엄 시장 확대.</p></article>
+              <article class="card"><b>T</b><p>웰라 재진입, 케라스타즈 AI 진단, 인디 두피케어 브랜드 성장.</p></article>
+            </div>
+          </section>
+
+          <section id="strategy" class="dashboard-section">
+            <div class="section-title">
+              <div>
+                <p class="eyebrow">07 Strategy</p>
+                <h2>최근 이슈 & 전략 방향</h2>
+              </div>
+            </div>
+            <div class="issue-controls" aria-label="이슈 필터">
+              <button class="is-active" type="button" data-filter="all">전체</button>
+              <button type="button" data-filter="risk">리스크</button>
+              <button type="button" data-filter="growth">성장</button>
+              <button type="button" data-filter="brand">브랜드</button>
+            </div>
+            <div class="issue-grid">
+              <article class="card issue-card" data-type="risk"><span>HIGH</span><h3>웰라 한국 시장 재진입</h3><p>재진입 전 연 300억 매출 기록 브랜드. 빠른 회복 시 점유율 위협 가능.</p></article>
+              <article class="card issue-card" data-type="growth"><span>POSITIVE</span><h3>매출 역대 최고</h3><p>2024년 792억원. 오프라인 이벤트 비용 증가로 수익성 관리가 병행 과제.</p></article>
+              <article class="card issue-card" data-type="brand"><span>BRAND</span><h3>살롱커넥션 3회</h3><p>GARAGE 컨셉, 컬러스테이지 파이널쇼, Artist Stage로 B2B 커뮤니티 강화.</p></article>
+              <article class="card issue-card" data-type="growth"><span>OPPORTUNITY</span><h3>K-헤어케어 수출 급증</h3><p>2025년 3분기 +39.2%. 글로벌 진출과 인지도 구축 기회.</p></article>
+              <article class="card issue-card" data-type="growth"><span>PRODUCT</span><h3>리뉴 카멜리아 인퓨전 오일</h3><p>스키니피케이션 대응 및 프리미엄 포트폴리오 확대.</p></article>
+            </div>
+            <div class="strategy-grid">
+              <article class="card"><span>01</span><h3>상품 포트폴리오 다변화</h3><p>두피 케어 전문 라인과 프리미엄 라인 확대.</p></article>
+              <article class="card"><span>02</span><h3>B2C 접점 확대</h3><p>아모레몰, 커머스, SNS로 홈케어 브랜드 접점 확대.</p></article>
+              <article class="card"><span>03</span><h3>글로벌 진출 가속화</h3><p>영국·미국·아시아 시장과 그룹 글로벌 유통망 활용.</p></article>
+              <article class="card"><span>04</span><h3>데이터 기반 퍼포먼스 마케팅</h3><p>RIA 프로세스와 디지털 데이터를 연결해 B2C ROI 개선.</p></article>
+              <article class="card"><span>05</span><h3>B2B 살롱 파트너십 심화</h3><p>교육, 경연, 창업 지원, 글로벌 협업으로 로열티 강화.</p></article>
+              <article class="card"><span>06</span><h3>수익성 개선</h3><p>오프라인 이벤트 비용 효율화와 고부가가치 제품 비중 확대.</p></article>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <dialog id="imageDialog" class="image-dialog">
+      <button class="dialog-close" type="button" aria-label="이미지 닫기">닫기</button>
+      <img alt="" />
+      <p></p>
+    </dialog>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
