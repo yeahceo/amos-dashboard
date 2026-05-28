@@ -1,0 +1,98 @@
+{
+  "company": {
+    "name": "AMOS Professional",
+    "founded": 2007,
+    "employees": 94,
+    "headquarters": "South Korea"
+  },
+  "financial": {
+    "revenue_2024": 792,
+    "revenue_currency": "억원 (100M KRW)",
+    "growth": "Record High",
+    "market_share": 52,
+    "market_position": "#1"
+  },
+  "business_model": {
+    "b2b_percentage": 70,
+    "b2b_label": "Professional Salons",
+    "b2c_percentage": 30,
+    "b2c_label": "Direct Consumers"
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "녹차실감 (Green Tea Sensation)",
+      "category": "Premium Haircare",
+      "target": "Professional",
+      "features": "Green tea extract, scalp care"
+    },
+    {
+      "id": 2,
+      "name": "리뉴 카멜리아 (Renew Camellia)",
+      "category": "Premium Haircare",
+      "target": "Professional & Consumer",
+      "features": "Camellia oil, protein repair"
+    },
+    {
+      "id": 3,
+      "name": "잇츠에이블 (It's Able)",
+      "category": "Professional Range",
+      "target": "Professional",
+      "features": "Versatile treatment, multi-purpose"
+    }
+  ],
+  "marketing_channels": [
+    {
+      "channel": "살롱 커넥션 (Salon Connection)",
+      "type": "B2B Event",
+      "description": "Professional salon networking events",
+      "impact": "High"
+    },
+    {
+      "channel": "Online Direct",
+      "type": "E-commerce",
+      "description": "Direct consumer sales",
+      "impact": "Growing"
+    },
+    {
+      "channel": "Professional Distribution",
+      "type": "Wholesale",
+      "description": "Salon supply distribution",
+      "impact": "Core"
+    }
+  ],
+  "market_trends": [
+    {
+      "trend": "Skinification",
+      "description": "Haircare with skincare benefits",
+      "relevance": "High - AMOS leading this trend"
+    },
+    {
+      "trend": "K-Beauty Globalization",
+      "description": "Korean beauty products expanding internationally",
+      "relevance": "High - Strategic focus"
+    },
+    {
+      "trend": "Professional Market Growth",
+      "description": "Increased investment in salon professionals",
+      "relevance": "Core to business model"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Amore Pacific",
+      "category": "Premium Cosmetics",
+      "market_position": "Leader in cosmetics"
+    },
+    {
+      "name": "LG Household & Health Care",
+      "category": "Hair & Beauty",
+      "market_position": "Strong presence"
+    },
+    {
+      "name": "Local Professional Brands",
+      "category": "Professional Haircare",
+      "market_position": "Regional competitors"
+    }
+  ]
+}
