@@ -133,25 +133,25 @@ const products = {
   green: {
     category: 'Scalp Care', name: '녹차실감',
     description: '2007년 출시된 아모스프로페셔널의 스테디셀러 No.1 라인입니다. 극차광 녹차와 카페인을 중심으로 두피 타입별 기능성 케어를 제안합니다.',
-    image: './assets/page_17.png',
+    image: 'https://amospro3.cafe24.com/main/promotion/academy_1_pc.jpg',
     facts: [['출시','2007년, 2019년 업그레이드'],['성분','극차광 녹차, 카페인'],['구성','샴푸, 세럼, 컨디셔너'],['인증','탈모증상완화 기능성']],
   },
   camellia: {
     category: 'Premium Care', name: '리뉴 카멜리아',
     description: '2024년 출시된 프리미엄 케어 라인입니다. 동백오일 특허추출물과 레티놀, 콜라겐, 비타민C를 적용해 스키니피케이션 흐름에 대응합니다.',
-    image: './assets/page_17.png',
+    image: 'https://amospro3.cafe24.com/main/colorchart/1_key_pc.jpg',
     facts: [['출시','2024년'],['성분','동백오일, 레티놀, 콜라겐, 비타민C'],['구성','듀얼케어팩, 인퓨전오일'],['가격대','약 3-4만원대']],
   },
   able: {
     category: 'Color / Perm', name: '잇츠에이블',
     description: '2023년 론칭한 패션 염모제 라인입니다. 트렌디한 컬러 표현과 글로벌 화보, 디자이너 창작 콘텐츠에 적합한 신성장 라인입니다.',
-    image: './assets/page_18.png',
+    image: 'https://amospro3.cafe24.com/main/promotion/main_magazine_202601_special.jpg',
     facts: [['출시','2023년'],['카테고리','패션 염모제'],['타겟','트렌드를 원하는 헤어 디자이너'],['콘텐츠','영국 세븐시스터즈 글로벌 화보']],
   },
   style: {
     category: 'Style Expression', name: '헤어핏 컬업젤리',
     description: '2025년 신제품으로, 젤리 타입의 가볍고 촉촉한 텍스처를 통해 컬 모양 고정과 촉촉한 마무리를 제안합니다.',
-    image: './assets/page_18.png',
+    image: 'https://amospro3.cafe24.com/main/recommend/202307_main_pc_01.png',
     facts: [['출시','2025년'],['제형','젤리 타입'],['기능','컬 모양 고정, 촉촉한 마무리'],['타겟','컬 스타일링 소비자']],
   },
 };
