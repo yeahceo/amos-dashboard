@@ -1,6 +1,6 @@
-Chart.defaults.color = '#a7b0be';
-Chart.defaults.borderColor = '#293241';
-Chart.defaults.font.family = "'Segoe UI', 'Noto Sans KR', Arial, sans-serif";
+Chart.defaults.color = '#8D96A8';
+Chart.defaults.borderColor = '#E4E7EF';
+Chart.defaults.font.family = "'Pretendard', 'Noto Sans KR', 'Segoe UI', Arial, sans-serif";
 Chart.defaults.font.size = 12;
 
 // ── chart factories ───────────────────────────────────────────────────────
@@ -12,17 +12,17 @@ function makeRevenueConfig() {
       datasets: [{
         label: '매출 (억원)',
         data: [490, 600, 665, 720, 792],
-        borderColor: '#32d583',
+        borderColor: '#05C46B',
         backgroundColor(ctx) {
           const g = ctx.chart.ctx.createLinearGradient(0, 0, 0, 280);
-          g.addColorStop(0, 'rgba(50,213,131,0.28)');
-          g.addColorStop(1, 'rgba(50,213,131,0.01)');
+          g.addColorStop(0, 'rgba(5,196,107,0.18)');
+          g.addColorStop(1, 'rgba(5,196,107,0.01)');
           return g;
         },
         fill: true,
         tension: 0.4,
-        pointBackgroundColor: '#32d583',
-        pointBorderColor: '#070a0f',
+        pointBackgroundColor: '#05C46B',
+        pointBorderColor: '#fff',
         pointBorderWidth: 2,
         pointRadius: 6,
         pointHoverRadius: 9,
@@ -55,8 +55,8 @@ function makeMarketConfig() {
       labels: ['AMOS', 'Milbon', "L'Oreal Pro", '기타'],
       datasets: [{
         data: [52, 12, 10, 26],
-        backgroundColor: ['#32d583', '#72a1ff', '#b89cff', '#1f2937'],
-        borderColor: '#0d1118',
+        backgroundColor: ['#05C46B', '#5470FF', '#9B59F5', '#E4E7EF'],
+        borderColor: '#fff',
         borderWidth: 2,
         hoverOffset: 10,
       }],
@@ -85,7 +85,7 @@ function makeGlobalConfig() {
       datasets: [{
         label: '성장률 (%)',
         data: [39.2, 85.9, 6.9],
-        backgroundColor: ['#32d583', '#72a1ff', '#f7c76b'],
+        backgroundColor: ['#05C46B', '#5470FF', '#F59E0B'],
         borderRadius: 6,
         borderSkipped: false,
       }],
@@ -175,8 +175,8 @@ function initConsumerChart() {
       labels: ['B2B 살롱 디자이너', 'B2C 홈케어 소비자'],
       datasets: [{
         data: [70, 30],
-        backgroundColor: ['#32d583', '#72a1ff'],
-        borderColor: '#0d1118',
+        backgroundColor: ['#05C46B', '#5470FF'],
+        borderColor: '#fff',
         borderWidth: 2,
         hoverOffset: 8,
       }],
