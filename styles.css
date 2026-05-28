@@ -1,22 +1,24 @@
 /* ── Design Tokens ───────────────────────────────────────────────────────── */
 :root {
-  --color-primary:      #05C46B;
-  --color-primary-dark: #00A958;
-  --color-primary-soft: #E6F9F1;
-  --color-primary-line: rgba(5,196,107,0.2);
-  --color-blue:         #5470FF;
-  --color-blue-soft:    #EEF0FF;
-  --color-purple:       #9B59F5;
-  --color-purple-soft:  #F0EBFF;
-  --color-amber:        #F59E0B;
+  --color-primary:      #4DC940;
+  --color-primary-dark: #3BA82D;
+  --color-primary-soft: #E6F9E3;
+  --color-primary-line: rgba(77,201,64,0.2);
+  --color-blue:         #6FA8DC;
+  --color-blue-soft:    #EBF3FB;
+  --color-purple:       #9470D4;
+  --color-purple-soft:  #F2EDFC;
+  --color-teal:         #52C49A;
+  --color-teal-soft:    #E6F7F2;
+  --color-amber:        #E8B848;
   --color-amber-soft:   #FEF3C7;
-  --color-red:          #EF4444;
-  --color-red-soft:     #FEE2E2;
+  --color-red:          #E86969;
+  --color-red-soft:     #FEECEC;
 
-  --bg:          #F2F4F7;
+  --bg:          #ECEEF3;
   --surface:     #FFFFFF;
-  --surface-2:   #F9FAFB;
-  --border:      #E4E7EF;
+  --surface-2:   #F4F6FA;
+  --border:      #E2E5EF;
 
   --text-primary:   #1A2035;
   --text-secondary: #4B5668;
