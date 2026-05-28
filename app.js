@@ -1,7 +1,7 @@
 Chart.defaults.color = '#8D96A8';
 Chart.defaults.borderColor = '#E2E5EF';
 Chart.defaults.font.family = "'Pretendard', 'Noto Sans KR', 'Segoe UI', Arial, sans-serif";
-Chart.defaults.font.size = 12;
+Chart.defaults.font.size = 24;
 
 // ── chart factories ───────────────────────────────────────────────────────
 function makeRevenueConfig() {
